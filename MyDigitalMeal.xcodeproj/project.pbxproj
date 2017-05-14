@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0288C5DD2214CE688153DE44 /* Pods_MyDigitalMeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4622DCEB46173FBA8F9B618 /* Pods_MyDigitalMeal.framework */; };
+		8807CC4F264A38F48AF42191 /* Pods_MyDigitalMealTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B181AF3A45A3FF4DA6F5D730 /* Pods_MyDigitalMealTests.framework */; };
+		E10B00471EC8D70F00FD4FC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B00461EC8D70F00FD4FC5 /* AppDelegate.swift */; };
+		E10B004C1EC8D70F00FD4FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10B004A1EC8D70F00FD4FC5 /* Main.storyboard */; };
+		E10B00511EC8D70F00FD4FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10B00501EC8D70F00FD4FC5 /* Assets.xcassets */; };
+		E10B00541EC8D70F00FD4FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10B00521EC8D70F00FD4FC5 /* LaunchScreen.storyboard */; };
+		E10B005F1EC8D70F00FD4FC5 /* MyDigitalMealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B005E1EC8D70F00FD4FC5 /* MyDigitalMealTests.swift */; };
+		E193018E1EC9055000841015 /* GGSDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E193018B1EC9055000841015 /* GGSDataLayer.swift */; };
+		E193018F1EC9055000841015 /* MyDigitalMeal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E193018C1EC9055000841015 /* MyDigitalMeal.xcdatamodeld */; };
+		E19301921EC9055F00841015 /* GGSModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301901EC9055F00841015 /* GGSModelManager.swift */; };
+		E19301931EC9055F00841015 /* GGSMyDigitalMealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301911EC9055F00841015 /* GGSMyDigitalMealModel.swift */; };
+		E19301951EC9056D00841015 /* GGSNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301941EC9056D00841015 /* GGSNetworkLayer.swift */; };
+		E19301971EC9058800841015 /* GGSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301961EC9058800841015 /* GGSMainViewController.swift */; };
+		E193019C1EC9060900841015 /* MyDigitalMeal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E193019A1EC9060900841015 /* MyDigitalMeal.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E10B005B1EC8D70F00FD4FC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10B003B1EC8D70F00FD4FC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E10B00421EC8D70F00FD4FC5;
+			remoteInfo = MyDigitalMeal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4309CB1C737E3608B8AC7112 /* Pods-MyDigitalMealTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDigitalMealTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDigitalMealTests/Pods-MyDigitalMealTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60725664895E51AE5AE3EF2D /* Pods-MyDigitalMealTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDigitalMealTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDigitalMealTests/Pods-MyDigitalMealTests.release.xcconfig"; sourceTree = "<group>"; };
+		B181AF3A45A3FF4DA6F5D730 /* Pods_MyDigitalMealTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDigitalMealTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3BFAE28D21BA77D11084682 /* Pods-MyDigitalMeal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDigitalMeal.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyDigitalMeal/Pods-MyDigitalMeal.release.xcconfig"; sourceTree = "<group>"; };
+		D4622DCEB46173FBA8F9B618 /* Pods_MyDigitalMeal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyDigitalMeal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B960A6E97395B6A8096DF3 /* Pods-MyDigitalMeal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDigitalMeal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyDigitalMeal/Pods-MyDigitalMeal.debug.xcconfig"; sourceTree = "<group>"; };
+		E10B00431EC8D70F00FD4FC5 /* MyDigitalMeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDigitalMeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10B00461EC8D70F00FD4FC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E10B004B1EC8D70F00FD4FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E10B00501EC8D70F00FD4FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E10B00531EC8D70F00FD4FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E10B00551EC8D70F00FD4FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10B005A1EC8D70F00FD4FC5 /* MyDigitalMealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDigitalMealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10B005E1EC8D70F00FD4FC5 /* MyDigitalMealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDigitalMealTests.swift; sourceTree = "<group>"; };
+		E10B00601EC8D70F00FD4FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E193018B1EC9055000841015 /* GGSDataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSDataLayer.swift; path = DataLayer/GGSDataLayer.swift; sourceTree = "<group>"; };
+		E193018D1EC9055000841015 /* MyDigitalMeal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDigitalMeal.xcdatamodel; sourceTree = "<group>"; };
+		E19301901EC9055F00841015 /* GGSModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSModelManager.swift; path = Model/GGSModelManager.swift; sourceTree = "<group>"; };
+		E19301911EC9055F00841015 /* GGSMyDigitalMealModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSMyDigitalMealModel.swift; path = Model/GGSMyDigitalMealModel.swift; sourceTree = "<group>"; };
+		E19301941EC9056D00841015 /* GGSNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSNetworkLayer.swift; path = NetworkLayer/GGSNetworkLayer.swift; sourceTree = "<group>"; };
+		E19301961EC9058800841015 /* GGSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSMainViewController.swift; path = ViewControllers/GGSMainViewController.swift; sourceTree = "<group>"; };
+		E19301981EC905B100841015 /* GGSNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSNetworkLayer.swift; path = NetworkLayer/GGSNetworkLayer.swift; sourceTree = "<group>"; };
+		E193019B1EC9060900841015 /* MyDigitalMeal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDigitalMeal.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E10B00401EC8D70F00FD4FC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0288C5DD2214CE688153DE44 /* Pods_MyDigitalMeal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10B00571EC8D70F00FD4FC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8807CC4F264A38F48AF42191 /* Pods_MyDigitalMealTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1801AD45F5009C916166853E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4622DCEB46173FBA8F9B618 /* Pods_MyDigitalMeal.framework */,
+				B181AF3A45A3FF4DA6F5D730 /* Pods_MyDigitalMealTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AD5AA6A3F5F9F66EA20AE99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5B960A6E97395B6A8096DF3 /* Pods-MyDigitalMeal.debug.xcconfig */,
+				B3BFAE28D21BA77D11084682 /* Pods-MyDigitalMeal.release.xcconfig */,
+				4309CB1C737E3608B8AC7112 /* Pods-MyDigitalMealTests.debug.xcconfig */,
+				60725664895E51AE5AE3EF2D /* Pods-MyDigitalMealTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E108A14D1EC8FE00003BB696 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E19301961EC9058800841015 /* GGSMainViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E108A14E1EC8FE0E003BB696 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E193019A1EC9060900841015 /* MyDigitalMeal.xcdatamodeld */,
+				E193018B1EC9055000841015 /* GGSDataLayer.swift */,
+				E193018C1EC9055000841015 /* MyDigitalMeal.xcdatamodeld */,
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
+		E108A14F1EC900BC003BB696 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E19301981EC905B100841015 /* GGSNetworkLayer.swift */,
+			);
+			name = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		E108A1501EC900DA003BB696 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E19301901EC9055F00841015 /* GGSModelManager.swift */,
+				E19301911EC9055F00841015 /* GGSMyDigitalMealModel.swift */,
+				E19301941EC9056D00841015 /* GGSNetworkLayer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E10B003A1EC8D70F00FD4FC5 = {
+			isa = PBXGroup;
+			children = (
+				E10B00451EC8D70F00FD4FC5 /* MyDigitalMeal */,
+				E10B005D1EC8D70F00FD4FC5 /* MyDigitalMealTests */,
+				E10B00441EC8D70F00FD4FC5 /* Products */,
+				2AD5AA6A3F5F9F66EA20AE99 /* Pods */,
+				1801AD45F5009C916166853E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E10B00441EC8D70F00FD4FC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E10B00431EC8D70F00FD4FC5 /* MyDigitalMeal.app */,
+				E10B005A1EC8D70F00FD4FC5 /* MyDigitalMealTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E10B00451EC8D70F00FD4FC5 /* MyDigitalMeal */ = {
+			isa = PBXGroup;
+			children = (
+				E10B004A1EC8D70F00FD4FC5 /* Main.storyboard */,
+				E10B00521EC8D70F00FD4FC5 /* LaunchScreen.storyboard */,
+				E10B00501EC8D70F00FD4FC5 /* Assets.xcassets */,
+				E10B00461EC8D70F00FD4FC5 /* AppDelegate.swift */,
+				E10B00551EC8D70F00FD4FC5 /* Info.plist */,
+				E108A14D1EC8FE00003BB696 /* ViewControllers */,
+				E108A1501EC900DA003BB696 /* Model */,
+				E108A14E1EC8FE0E003BB696 /* DataLayer */,
+				E108A14F1EC900BC003BB696 /* NetworkLayer */,
+			);
+			path = MyDigitalMeal;
+			sourceTree = "<group>";
+		};
+		E10B005D1EC8D70F00FD4FC5 /* MyDigitalMealTests */ = {
+			isa = PBXGroup;
+			children = (
+				E10B005E1EC8D70F00FD4FC5 /* MyDigitalMealTests.swift */,
+				E10B00601EC8D70F00FD4FC5 /* Info.plist */,
+			);
+			path = MyDigitalMealTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10B00421EC8D70F00FD4FC5 /* MyDigitalMeal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10B00631EC8D70F00FD4FC5 /* Build configuration list for PBXNativeTarget "MyDigitalMeal" */;
+			buildPhases = (
+				4944AE3F5322D192ABE29824 /* [CP] Check Pods Manifest.lock */,
+				E10B003F1EC8D70F00FD4FC5 /* Sources */,
+				E10B00401EC8D70F00FD4FC5 /* Frameworks */,
+				E10B00411EC8D70F00FD4FC5 /* Resources */,
+				A0D46D4C385C59572753553D /* [CP] Embed Pods Frameworks */,
+				5D66CEAC55E163E4548038C4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDigitalMeal;
+			productName = MyDigitalMeal;
+			productReference = E10B00431EC8D70F00FD4FC5 /* MyDigitalMeal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E10B00591EC8D70F00FD4FC5 /* MyDigitalMealTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10B00661EC8D70F00FD4FC5 /* Build configuration list for PBXNativeTarget "MyDigitalMealTests" */;
+			buildPhases = (
+				ED43B6CDE186E211DAB85246 /* [CP] Check Pods Manifest.lock */,
+				E10B00561EC8D70F00FD4FC5 /* Sources */,
+				E10B00571EC8D70F00FD4FC5 /* Frameworks */,
+				E10B00581EC8D70F00FD4FC5 /* Resources */,
+				AA121B49CA0292E59B095E2D /* [CP] Embed Pods Frameworks */,
+				3BA7626C0073D71D1D9A39F2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E10B005C1EC8D70F00FD4FC5 /* PBXTargetDependency */,
+			);
+			name = MyDigitalMealTests;
+			productName = MyDigitalMealTests;
+			productReference = E10B005A1EC8D70F00FD4FC5 /* MyDigitalMealTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E10B003B1EC8D70F00FD4FC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Gary Shirk";
+				TargetAttributes = {
+					E10B00421EC8D70F00FD4FC5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5T6QA6HZRH;
+						ProvisioningStyle = Automatic;
+					};
+					E10B00591EC8D70F00FD4FC5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5T6QA6HZRH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E10B00421EC8D70F00FD4FC5;
+					};
+				};
+			};
+			buildConfigurationList = E10B003E1EC8D70F00FD4FC5 /* Build configuration list for PBXProject "MyDigitalMeal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E10B003A1EC8D70F00FD4FC5;
+			productRefGroup = E10B00441EC8D70F00FD4FC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E10B00421EC8D70F00FD4FC5 /* MyDigitalMeal */,
+				E10B00591EC8D70F00FD4FC5 /* MyDigitalMealTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10B00411EC8D70F00FD4FC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10B00541EC8D70F00FD4FC5 /* LaunchScreen.storyboard in Resources */,
+				E10B00511EC8D70F00FD4FC5 /* Assets.xcassets in Resources */,
+				E10B004C1EC8D70F00FD4FC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10B00581EC8D70F00FD4FC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BA7626C0073D71D1D9A39F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDigitalMealTests/Pods-MyDigitalMealTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4944AE3F5322D192ABE29824 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D66CEAC55E163E4548038C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDigitalMeal/Pods-MyDigitalMeal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0D46D4C385C59572753553D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDigitalMeal/Pods-MyDigitalMeal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA121B49CA0292E59B095E2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyDigitalMealTests/Pods-MyDigitalMealTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED43B6CDE186E211DAB85246 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E10B003F1EC8D70F00FD4FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19301971EC9058800841015 /* GGSMainViewController.swift in Sources */,
+				E193019C1EC9060900841015 /* MyDigitalMeal.xcdatamodeld in Sources */,
+				E19301931EC9055F00841015 /* GGSMyDigitalMealModel.swift in Sources */,
+				E193018F1EC9055000841015 /* MyDigitalMeal.xcdatamodeld in Sources */,
+				E193018E1EC9055000841015 /* GGSDataLayer.swift in Sources */,
+				E19301951EC9056D00841015 /* GGSNetworkLayer.swift in Sources */,
+				E19301921EC9055F00841015 /* GGSModelManager.swift in Sources */,
+				E10B00471EC8D70F00FD4FC5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10B00561EC8D70F00FD4FC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10B005F1EC8D70F00FD4FC5 /* MyDigitalMealTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E10B005C1EC8D70F00FD4FC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E10B00421EC8D70F00FD4FC5 /* MyDigitalMeal */;
+			targetProxy = E10B005B1EC8D70F00FD4FC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E10B004A1EC8D70F00FD4FC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E10B004B1EC8D70F00FD4FC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E10B00521EC8D70F00FD4FC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E10B00531EC8D70F00FD4FC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E10B00611EC8D70F00FD4FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E10B00621EC8D70F00FD4FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E10B00641EC8D70F00FD4FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B960A6E97395B6A8096DF3 /* Pods-MyDigitalMeal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5T6QA6HZRH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ChameleonFramework\"",
+				);
+				INFOPLIST_FILE = MyDigitalMeal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.garyshirk.MyDigitalMeal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E10B00651EC8D70F00FD4FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3BFAE28D21BA77D11084682 /* Pods-MyDigitalMeal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5T6QA6HZRH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ChameleonFramework\"",
+				);
+				INFOPLIST_FILE = MyDigitalMeal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.garyshirk.MyDigitalMeal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E10B00671EC8D70F00FD4FC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4309CB1C737E3608B8AC7112 /* Pods-MyDigitalMealTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5T6QA6HZRH;
+				INFOPLIST_FILE = MyDigitalMealTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.garyshirk.MyDigitalMealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyDigitalMeal.app/MyDigitalMeal";
+			};
+			name = Debug;
+		};
+		E10B00681EC8D70F00FD4FC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60725664895E51AE5AE3EF2D /* Pods-MyDigitalMealTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5T6QA6HZRH;
+				INFOPLIST_FILE = MyDigitalMealTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.garyshirk.MyDigitalMealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyDigitalMeal.app/MyDigitalMeal";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E10B003E1EC8D70F00FD4FC5 /* Build configuration list for PBXProject "MyDigitalMeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10B00611EC8D70F00FD4FC5 /* Debug */,
+				E10B00621EC8D70F00FD4FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10B00631EC8D70F00FD4FC5 /* Build configuration list for PBXNativeTarget "MyDigitalMeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10B00641EC8D70F00FD4FC5 /* Debug */,
+				E10B00651EC8D70F00FD4FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10B00661EC8D70F00FD4FC5 /* Build configuration list for PBXNativeTarget "MyDigitalMealTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10B00671EC8D70F00FD4FC5 /* Debug */,
+				E10B00681EC8D70F00FD4FC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E193018C1EC9055000841015 /* MyDigitalMeal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E193018D1EC9055000841015 /* MyDigitalMeal.xcdatamodel */,
+			);
+			currentVersion = E193018D1EC9055000841015 /* MyDigitalMeal.xcdatamodel */;
+			name = MyDigitalMeal.xcdatamodeld;
+			path = DataLayer/MyDigitalMeal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		E193019A1EC9060900841015 /* MyDigitalMeal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E193019B1EC9060900841015 /* MyDigitalMeal.xcdatamodel */,
+			);
+			currentVersion = E193019B1EC9060900841015 /* MyDigitalMeal.xcdatamodel */;
+			name = MyDigitalMeal.xcdatamodeld;
+			path = DataLayer/MyDigitalMeal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E10B003B1EC8D70F00FD4FC5 /* Project object */;
+}
