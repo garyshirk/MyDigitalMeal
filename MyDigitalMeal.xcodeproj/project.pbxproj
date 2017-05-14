@@ -20,7 +20,7 @@
 		E19301931EC9055F00841015 /* GGSMyDigitalMealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301911EC9055F00841015 /* GGSMyDigitalMealModel.swift */; };
 		E19301951EC9056D00841015 /* GGSNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301941EC9056D00841015 /* GGSNetworkLayer.swift */; };
 		E19301971EC9058800841015 /* GGSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301961EC9058800841015 /* GGSMainViewController.swift */; };
-		E193019C1EC9060900841015 /* MyDigitalMeal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E193019A1EC9060900841015 /* MyDigitalMeal.xcdatamodeld */; };
+		E1A32BF41EC9101E003C040B /* GGSMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		E19301941EC9056D00841015 /* GGSNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSNetworkLayer.swift; path = NetworkLayer/GGSNetworkLayer.swift; sourceTree = "<group>"; };
 		E19301961EC9058800841015 /* GGSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSMainViewController.swift; path = ViewControllers/GGSMainViewController.swift; sourceTree = "<group>"; };
 		E19301981EC905B100841015 /* GGSNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSNetworkLayer.swift; path = NetworkLayer/GGSNetworkLayer.swift; sourceTree = "<group>"; };
-		E193019B1EC9060900841015 /* MyDigitalMeal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDigitalMeal.xcdatamodel; sourceTree = "<group>"; };
+		E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGSMenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E19301961EC9058800841015 /* GGSMainViewController.swift */,
+				E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -110,7 +111,6 @@
 		E108A14E1EC8FE0E003BB696 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
-				E193019A1EC9060900841015 /* MyDigitalMeal.xcdatamodeld */,
 				E193018B1EC9055000841015 /* GGSDataLayer.swift */,
 				E193018C1EC9055000841015 /* MyDigitalMeal.xcdatamodeld */,
 			);
@@ -385,7 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19301971EC9058800841015 /* GGSMainViewController.swift in Sources */,
-				E193019C1EC9060900841015 /* MyDigitalMeal.xcdatamodeld in Sources */,
+				E1A32BF41EC9101E003C040B /* GGSMenuTableViewController.swift in Sources */,
 				E19301931EC9055F00841015 /* GGSMyDigitalMealModel.swift in Sources */,
 				E193018F1EC9055000841015 /* MyDigitalMeal.xcdatamodeld in Sources */,
 				E193018E1EC9055000841015 /* GGSDataLayer.swift in Sources */,
@@ -633,17 +633,6 @@
 				E193018D1EC9055000841015 /* MyDigitalMeal.xcdatamodel */,
 			);
 			currentVersion = E193018D1EC9055000841015 /* MyDigitalMeal.xcdatamodel */;
-			name = MyDigitalMeal.xcdatamodeld;
-			path = DataLayer/MyDigitalMeal.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		E193019A1EC9060900841015 /* MyDigitalMeal.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E193019B1EC9060900841015 /* MyDigitalMeal.xcdatamodel */,
-			);
-			currentVersion = E193019B1EC9060900841015 /* MyDigitalMeal.xcdatamodel */;
 			name = MyDigitalMeal.xcdatamodeld;
 			path = DataLayer/MyDigitalMeal.xcdatamodeld;
 			sourceTree = "<group>";
