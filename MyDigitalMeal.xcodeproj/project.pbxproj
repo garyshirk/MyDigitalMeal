@@ -19,7 +19,7 @@
 		E19301921EC9055F00841015 /* GGSModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301901EC9055F00841015 /* GGSModelManager.swift */; };
 		E19301931EC9055F00841015 /* GGSMyDigitalMealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301911EC9055F00841015 /* GGSMyDigitalMealModel.swift */; };
 		E19301951EC9056D00841015 /* GGSNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301941EC9056D00841015 /* GGSNetworkLayer.swift */; };
-		E19301971EC9058800841015 /* GGSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301961EC9058800841015 /* GGSMainViewController.swift */; };
+		E19301971EC9058800841015 /* GGSPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301961EC9058800841015 /* GGSPageViewController.swift */; };
 		E1A32BF41EC9101E003C040B /* GGSMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +54,7 @@
 		E19301901EC9055F00841015 /* GGSModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSModelManager.swift; path = Model/GGSModelManager.swift; sourceTree = "<group>"; };
 		E19301911EC9055F00841015 /* GGSMyDigitalMealModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSMyDigitalMealModel.swift; path = Model/GGSMyDigitalMealModel.swift; sourceTree = "<group>"; };
 		E19301941EC9056D00841015 /* GGSNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSNetworkLayer.swift; path = NetworkLayer/GGSNetworkLayer.swift; sourceTree = "<group>"; };
-		E19301961EC9058800841015 /* GGSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSMainViewController.swift; path = ViewControllers/GGSMainViewController.swift; sourceTree = "<group>"; };
+		E19301961EC9058800841015 /* GGSPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSPageViewController.swift; path = ViewControllers/GGSPageViewController.swift; sourceTree = "<group>"; };
 		E19301981EC905B100841015 /* GGSNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSNetworkLayer.swift; path = NetworkLayer/GGSNetworkLayer.swift; sourceTree = "<group>"; };
 		E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGSMenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +102,7 @@
 		E108A14D1EC8FE00003BB696 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E19301961EC9058800841015 /* GGSMainViewController.swift */,
+				E19301961EC9058800841015 /* GGSPageViewController.swift */,
 				E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */,
 			);
 			name = ViewControllers;
@@ -384,7 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19301971EC9058800841015 /* GGSMainViewController.swift in Sources */,
+				E19301971EC9058800841015 /* GGSPageViewController.swift in Sources */,
 				E1A32BF41EC9101E003C040B /* GGSMenuTableViewController.swift in Sources */,
 				E19301931EC9055F00841015 /* GGSMyDigitalMealModel.swift in Sources */,
 				E193018F1EC9055000841015 /* MyDigitalMeal.xcdatamodeld in Sources */,

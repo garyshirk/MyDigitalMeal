@@ -9,29 +9,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Page View Controller-->
+        <scene sceneID="GJu-gJ-oaX">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GGSMainViewController" customModule="MyDigitalMeal" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="IDR-dc-MGN">
-                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="0vU-Ty-rub">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="i7H-xP-fEa" customClass="GGSPageViewController" customModule="MyDigitalMeal" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3JJ-El-Ogy">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="o7d-g9-9zU">
                             <connections>
-                                <action selector="menuButtonClicked:" destination="BYZ-38-t0r" id="Zbq-uf-et6"/>
+                                <action selector="menuButtonClicked:" destination="i7H-xP-fEa" id="pue-ch-NHa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NPm-Sj-OYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1892" y="-69.715142428785612"/>
+            <point key="canvasLocation" x="2041" y="-62"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HS5-gk-Vgp">
@@ -62,7 +54,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="tbS-kP-xZh" kind="relationship" relationship="viewControllers" id="eV4-LE-x3G"/>
+                        <segue destination="5qQ-6U-AHB" kind="relationship" relationship="viewControllers" id="nhv-lo-hlL"/>
                         <segue destination="oZq-eh-Bo2" kind="relationship" relationship="viewControllers" id="IcI-YF-B8X"/>
                     </connections>
                 </tabBarController>
@@ -135,25 +127,6 @@
             </objects>
             <point key="canvasLocation" x="1210" y="-725"/>
         </scene>
-        <!--EAT-->
-        <scene sceneID="aBk-rj-O9Y">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tbS-kP-xZh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="EAT" id="ySY-cn-wYG"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hch-l1-dGx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jyl-97-OR8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kMD-7s-sXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="952.79999999999995" y="-69.715142428785612"/>
-        </scene>
         <!--STATS-->
         <scene sceneID="HyT-wC-OaY">
             <objects>
@@ -172,6 +145,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzT-rB-maK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="983.20000000000005" y="634.632683658171"/>
+        </scene>
+        <!--EAT-->
+        <scene sceneID="eXK-vN-h1O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5qQ-6U-AHB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="EAT" id="aho-3e-hi6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3jC-1g-mAx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i7H-xP-fEa" kind="relationship" relationship="rootViewController" id="mCK-KN-Vwo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaE-S0-mOh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1209" y="-61"/>
         </scene>
     </scenes>
 </document>
