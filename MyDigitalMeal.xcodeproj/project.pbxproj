@@ -22,6 +22,8 @@
 		E19301971EC9058800841015 /* GGSPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301961EC9058800841015 /* GGSPageViewController.swift */; };
 		E1A32BF41EC9101E003C040B /* GGSMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */; };
 		E1A32BF91EC925CC003C040B /* GGSMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A32BF81EC925CC003C040B /* GGSMealViewController.swift */; };
+		E1D1DCB21ECA4EA000B8A572 /* GGSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1DCB11ECA4EA000B8A572 /* GGSMainViewController.swift */; };
+		E1D1DCB41ECA5D4E00B8A572 /* GGSStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1DCB31ECA5D4E00B8A572 /* GGSStatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		E19301981EC905B100841015 /* GGSNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSNetworkLayer.swift; path = NetworkLayer/GGSNetworkLayer.swift; sourceTree = "<group>"; };
 		E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGSMenuTableViewController.swift; sourceTree = "<group>"; };
 		E1A32BF81EC925CC003C040B /* GGSMealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGSMealViewController.swift; sourceTree = "<group>"; };
+		E1D1DCB11ECA4EA000B8A572 /* GGSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGSMainViewController.swift; sourceTree = "<group>"; };
+		E1D1DCB31ECA5D4E00B8A572 /* GGSStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGSStatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +108,11 @@
 		E108A14D1EC8FE00003BB696 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E1D1DCB11ECA4EA000B8A572 /* GGSMainViewController.swift */,
+				E1D1DCB31ECA5D4E00B8A572 /* GGSStatsViewController.swift */,
+				E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */,
 				E19301961EC9058800841015 /* GGSPageViewController.swift */,
 				E1A32BF81EC925CC003C040B /* GGSMealViewController.swift */,
-				E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -388,9 +394,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19301971EC9058800841015 /* GGSPageViewController.swift in Sources */,
+				E1D1DCB21ECA4EA000B8A572 /* GGSMainViewController.swift in Sources */,
 				E1A32BF41EC9101E003C040B /* GGSMenuTableViewController.swift in Sources */,
 				E19301931EC9055F00841015 /* GGSMyDigitalMealModel.swift in Sources */,
 				E193018F1EC9055000841015 /* MyDigitalMeal.xcdatamodeld in Sources */,
+				E1D1DCB41ECA5D4E00B8A572 /* GGSStatsViewController.swift in Sources */,
 				E1A32BF91EC925CC003C040B /* GGSMealViewController.swift in Sources */,
 				E193018E1EC9055000841015 /* GGSDataLayer.swift in Sources */,
 				E19301951EC9056D00841015 /* GGSNetworkLayer.swift in Sources */,

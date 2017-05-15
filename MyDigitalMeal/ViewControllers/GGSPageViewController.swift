@@ -8,7 +8,6 @@
 
 import UIKit
 import ChameleonFramework
-import SideMenu
 import EMPageViewController
 
 class GGSPageViewController: UIViewController, EMPageViewControllerDelegate, EMPageViewControllerDataSource {
@@ -66,26 +65,6 @@ class GGSPageViewController: UIViewController, EMPageViewControllerDelegate, EMP
             return nil
         }
     }
-    
-    
-    
-    
-    
-    @IBAction func menuButtonClicked(_ sender: Any) {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let menuRightNavigationController = sb.instantiateViewController(withIdentifier: "sideMenuNavigationController") as! UISideMenuNavigationController
-        menuRightNavigationController.leftSide = true
-        SideMenuManager.menuRightNavigationController = menuRightNavigationController
-        SideMenuManager.menuAnimationBackgroundColor = UIColor.white
-        SideMenuManager.menuFadeStatusBar = false
-        SideMenuManager.menuAnimationTransformScaleFactor = 0.9
-        SideMenuManager.menuPresentMode = .viewSlideOut
-        
-        //let sideMenuViewController = menuRightNavigationController.viewControllers[0] as! GGSMenuTableViewController
-        
-        present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
-    }
-    
     
    // MARK: - EMPageViewController Data Source
     
