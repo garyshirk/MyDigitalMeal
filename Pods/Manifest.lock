@@ -2,19 +2,16 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
-  - EMPageViewController (3.0.0)
   - SideMenu (2.3.2)
 
 DEPENDENCIES:
   - ChameleonFramework/Swift
-  - EMPageViewController
   - SideMenu
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  EMPageViewController: 8e0abc2b2f53f56a83044527eadbb56bd71ae3e3
   SideMenu: 3fa07dd05d4bade2b6f9889fb1877e312e1ba319
 
-PODFILE CHECKSUM: 5b0d8158712ab4a3f27e95e90d2c4a76de579a0f
+PODFILE CHECKSUM: bde14bccc45c77b6edc8b79353640cffaf11aa1f
 
 COCOAPODS: 1.2.0

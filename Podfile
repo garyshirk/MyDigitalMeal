@@ -8,7 +8,6 @@ use_frameworks!
 # Pods for MyDigitalMeal
 pod 'ChameleonFramework/Swift'
 pod 'SideMenu'
-pod 'EMPageViewController'
 
 target 'MyDigitalMealTests' do
 inherit! :search_paths# Pods for testing

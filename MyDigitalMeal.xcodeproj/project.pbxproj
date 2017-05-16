@@ -19,7 +19,7 @@
 		E19301921EC9055F00841015 /* GGSModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301901EC9055F00841015 /* GGSModelManager.swift */; };
 		E19301931EC9055F00841015 /* GGSMyDigitalMealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301911EC9055F00841015 /* GGSMyDigitalMealModel.swift */; };
 		E19301951EC9056D00841015 /* GGSNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301941EC9056D00841015 /* GGSNetworkLayer.swift */; };
-		E19301971EC9058800841015 /* GGSPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19301961EC9058800841015 /* GGSPageViewController.swift */; };
+		E19B8A341ECB52E200A46CBE /* GGSSelectionAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19B8A331ECB52E200A46CBE /* GGSSelectionAreaView.swift */; };
 		E1A32BF41EC9101E003C040B /* GGSMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */; };
 		E1A32BF91EC925CC003C040B /* GGSMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A32BF81EC925CC003C040B /* GGSMealViewController.swift */; };
 		E1D1DCB21ECA4EA000B8A572 /* GGSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1DCB11ECA4EA000B8A572 /* GGSMainViewController.swift */; };
@@ -57,8 +57,8 @@
 		E19301901EC9055F00841015 /* GGSModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSModelManager.swift; path = Model/GGSModelManager.swift; sourceTree = "<group>"; };
 		E19301911EC9055F00841015 /* GGSMyDigitalMealModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSMyDigitalMealModel.swift; path = Model/GGSMyDigitalMealModel.swift; sourceTree = "<group>"; };
 		E19301941EC9056D00841015 /* GGSNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSNetworkLayer.swift; path = NetworkLayer/GGSNetworkLayer.swift; sourceTree = "<group>"; };
-		E19301961EC9058800841015 /* GGSPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSPageViewController.swift; path = ViewControllers/GGSPageViewController.swift; sourceTree = "<group>"; };
 		E19301981EC905B100841015 /* GGSNetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GGSNetworkLayer.swift; path = NetworkLayer/GGSNetworkLayer.swift; sourceTree = "<group>"; };
+		E19B8A331ECB52E200A46CBE /* GGSSelectionAreaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGSSelectionAreaView.swift; sourceTree = "<group>"; };
 		E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGSMenuTableViewController.swift; sourceTree = "<group>"; };
 		E1A32BF81EC925CC003C040B /* GGSMealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGSMealViewController.swift; sourceTree = "<group>"; };
 		E1D1DCB11ECA4EA000B8A572 /* GGSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GGSMainViewController.swift; sourceTree = "<group>"; };
@@ -111,8 +111,8 @@
 				E1D1DCB11ECA4EA000B8A572 /* GGSMainViewController.swift */,
 				E1D1DCB31ECA5D4E00B8A572 /* GGSStatsViewController.swift */,
 				E1A32BF31EC9101E003C040B /* GGSMenuTableViewController.swift */,
-				E19301961EC9058800841015 /* GGSPageViewController.swift */,
 				E1A32BF81EC925CC003C040B /* GGSMealViewController.swift */,
+				E19B8A331ECB52E200A46CBE /* GGSSelectionAreaView.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -393,7 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E19301971EC9058800841015 /* GGSPageViewController.swift in Sources */,
+				E19B8A341ECB52E200A46CBE /* GGSSelectionAreaView.swift in Sources */,
 				E1D1DCB21ECA4EA000B8A572 /* GGSMainViewController.swift in Sources */,
 				E1A32BF41EC9101E003C040B /* GGSMenuTableViewController.swift in Sources */,
 				E19301931EC9055F00841015 /* GGSMyDigitalMealModel.swift in Sources */,
@@ -472,6 +472,12 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ChameleonFramework\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EMPageViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SideMenu\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -522,6 +528,12 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ChameleonFramework\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EMPageViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SideMenu\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -547,6 +559,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/ChameleonFramework\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EMPageViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SideMenu\"",
 				);
 				INFOPLIST_FILE = MyDigitalMeal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -565,6 +579,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/ChameleonFramework\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EMPageViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SideMenu\"",
 				);
 				INFOPLIST_FILE = MyDigitalMeal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -581,6 +597,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 5T6QA6HZRH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ChameleonFramework\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EMPageViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SideMenu\"",
+				);
 				INFOPLIST_FILE = MyDigitalMealTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.garyshirk.MyDigitalMealTests;
@@ -597,6 +619,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 5T6QA6HZRH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ChameleonFramework\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EMPageViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SideMenu\"",
+				);
 				INFOPLIST_FILE = MyDigitalMealTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.garyshirk.MyDigitalMealTests;

@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="i7H-xP-fEa" kind="show" id="dQX-vo-7qq"/>
+                                    <segue destination="eP4-08-NLO" kind="show" id="a8A-Uc-7hV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,19 +44,6 @@
             </objects>
             <point key="canvasLocation" x="1863" y="-37"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="GJu-gJ-oaX">
-            <objects>
-                <pageViewController storyboardIdentifier="pageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="i7H-xP-fEa" customClass="GGSPageViewController" customModule="MyDigitalMeal" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="3JJ-El-Ogy"/>
-                    <connections>
-                        <segue destination="eP4-08-NLO" kind="show" identifier="mealViewControllerSegueId" id="4pL-ma-Qfc"/>
-                    </connections>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NPm-Sj-OYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2743" y="-37"/>
-        </scene>
         <!--Meal View Controller-->
         <scene sceneID="X2D-cM-aIl">
             <objects>
@@ -69,23 +56,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNh-vE-IO1">
-                                <rect key="frame" x="16" y="91" width="167" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="bwF-RJ-ATS">
+                                <rect key="frame" x="0.0" y="102" width="375" height="462"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWr-c6-4zJ" userLabel="selectionView" customClass="GGSSelectionAreaView" customModule="MyDigitalMeal" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="110" width="375" height="454"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NoW-yJ-FKL" firstAttribute="top" secondItem="OWr-c6-4zJ" secondAttribute="bottom" constant="54" id="LLL-R6-TcD"/>
+                            <constraint firstItem="OWr-c6-4zJ" firstAttribute="leading" secondItem="hb6-Lb-bhz" secondAttribute="leading" id="dy6-rZ-q1G"/>
+                            <constraint firstItem="OWr-c6-4zJ" firstAttribute="top" secondItem="hb6-Lb-bhz" secondAttribute="top" constant="110" id="r5s-hi-NnG"/>
+                            <constraint firstAttribute="trailing" secondItem="OWr-c6-4zJ" secondAttribute="trailing" id="rax-ja-7Mg"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="wNh-vE-IO1" id="Rae-rl-g72"/>
+                        <outlet property="imageView" destination="bwF-RJ-ATS" id="r9N-Bc-Zi1"/>
+                        <outlet property="selectionView" destination="OWr-c6-4zJ" id="I1M-Ed-Kxe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4m-TC-qAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3559" y="-22"/>
+            <point key="canvasLocation" x="2796" y="-37"/>
         </scene>
         <!--Stats View Controller-->
         <scene sceneID="HS5-gk-Vgp">
@@ -165,7 +160,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7fk-tq-1Ps" id="BLU-Ib-hdZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="row 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDF-d9-l3c">
@@ -182,7 +177,7 @@
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nyy-WZ-cDh" id="M7d-An-9bh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="row 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pY-af-wjd">
@@ -199,7 +194,7 @@
                                         <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EFJ-9m-lij" id="sEe-7d-bNO">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="row 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmv-hn-mlV">
@@ -262,4 +257,7 @@
             <point key="canvasLocation" x="945" y="-37"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pizza" width="750" height="721"/>
+    </resources>
 </document>

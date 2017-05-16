@@ -9,8 +9,12 @@
 import UIKit
 
 class GGSMealViewController: UIViewController {
+    
+    @IBOutlet weak var selectionView: GGSSelectionAreaView!
+    @IBOutlet weak var imageView: UIImageView!
 
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var mealImgView: UIImageView!
     
     var greeting: String!
     var color: UIColor!
@@ -19,23 +23,53 @@ class GGSMealViewController: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = color
-        self.label.text = greeting
+        //self.label.text = greeting
+        
+        selectionView.callback = { (points) in
+            
+            let path = UIBezierPath()
+            
+            for point in points {
+                
+                if points.first == point {
+                    
+                    path.move(to: point)
+                    
+                } else {
+                    
+                    path.addLine(to: point)
+                    
+                }
+            }
+            
+            path.close()
+            
+            let layer = CAShapeLayer()
+            layer.path = path.cgPath
+            
+            self.imageView.layer.mask = layer
+            
+            UIGraphicsBeginImageContext(self.imageView.bounds.size)
+            
+            self.imageView.layer.render(in: UIGraphicsGetCurrentContext()!)
+            
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            
+            UIGraphicsEndImageContext()
+            
+            let croppedCGImage =  image?.cgImage!.cropping(to: path.cgPath.boundingBoxOfPath);
+            
+            let croppedImage = UIImage(cgImage: croppedCGImage!)
+            
+            self.imageView.image = croppedImage
+            
+            self.imageView.layer.mask = nil
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
